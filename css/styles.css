@@ -1,0 +1,64 @@
+html {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#ffeeaa, #ffaa88);
+    font-family: sans-serif;
+}
+
+fieldset {
+    width: 70%;
+    border-top-color: black;
+}
+
+[class*='col-'] {
+    float: left;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+button {
+    background: radial-gradient(#ffeeaa, #ffaa88);
+    font-family: sans-serif;
+    color: #000;
+    width: 20%;
+    height: 50px;
+}
+
+.certificates {
+    display: inline-block vertical-align : bottom;
+    position: absolute;
+    bottom: 1%;
+    left: 37%;
+}
+
+#linkToLinkedin {
+    text-align: center;
+}
+
+.error_border_for_critical_data {
+    border: double;
+    border-color: #FF0000;
+}
+
+.off_errors {
+    display: none;
+}
+
+.on_errors {
+    color: #FF0000;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+table {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.text {
+    overflow: auto;
+}

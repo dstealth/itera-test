@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test task for Itera Research</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/validationAndAjax.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="grid">
+    <div class="col-1-2">
+        <form method="post">
+
+            <fieldset>
+                <div>
+                    <label for="text_displayed_in_cell">Enter text: </label>
+                    <input id="text_displayed_in_cell" type="text" name="text1"/>
+                </div>
+
+
+                <div id="input_critical_data">
+                    <label for="cells_selected_numbers">Enter the cells, separated by comma: </label>
+                    <input id="cells_selected_numbers" type="text" name="cells1"/>
+                </div>
+
+                <span class="off_errors" id="display_error_wrong_data">Wrong form of the input data.</span>
+                <span class="off_errors" id="display_validation_error_correct_numbers_of_cells"> Invalid values for figure was entered.</span>
+                <span class="off_errors"
+                      id="display_error_intersect_numbers">Values of figures can not intersect.</span>
+
+
+                <div>
+                    <label for="horizontal_align">Select the horizontal alignment: </label>
+                    <select id="horizontal_align" name="align1">
+                        <option value="left">left</option>
+                        <option value="center">center</option>
+                        <option value="right">right</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label for="vertical_align">Select the vertical alignment: </label>
+                    <select id="vertical_align" name="valign1">
+                        <option value="top">top</option>
+                        <option value="middle">middle</option>
+                        <option value="bottom">bottom</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label for="text_color">Select text color: </label>
+                    <input id="text_color" type="color" name="color1"/>
+                </div>
+
+
+                <div>
+                    <label for="cell_background_color">Select the background color: </label>
+                    <input id="cell_background_color" type="color" name="bgcolor1"/>
+                </div>
+            </fieldset>
+
+
+            <button type="submit">Create</button>
+
+        </form>
+
+        <div class="certificates">
+            <div>
+                <span>
+                    <a href="http://www.certifications.ru/resume/203808">
+                        <img src="http://www.certifications.ru/static/images/banner/86en.png" border=0>
+                        <img src="http://www.certifications.ru/static/images/banner/74en.png" border=0>
+                    </a>
+                </span>
+
+            </div>
+            <div id="linkToLinkedin">
+                <a href="https://ua.linkedin.com/in/dmytrostelmakh">
+                    Created by Dmytro Stelmakh
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="col-1-2">
+        <div id="results" align="center"></div>
+    </div>
+</div>
+
+</body>
+</html>
